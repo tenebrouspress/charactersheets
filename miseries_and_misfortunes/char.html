@@ -1,0 +1,586 @@
+<!--Name of the file : tables.pug-->
+<h1 style="text-align: center">Miseries & Misfortunes</h1>
+<h2 style="text-align: left">Qualites</h2>
+
+<table style="width:100%; text-align: center">
+  <tr>
+    <td>Name</td>
+    <td><input type="text" name="attr_character_name" /></td>
+    <td>Title</td>
+    <td><input style="width:89%" type="text" name="attr_title" value="" /></td>
+    <td>Motif</td>
+    <td><input style="width:89%" type="text" name="attr_motif" value="" /></td>
+  </tr>
+  <tr>
+    <td>Birth Quality</td>
+    <td><input style="width:89%" type="text" name="attr_birth" value="" /></td>
+    <td>Precedence</td>
+    <td><input style="width:89%" type="text" name="attr_precedence" value="" /></td>
+    <td>Virtue/Flaw</td>
+    <td><input style="width:89%" type="text" name="attf_virtue_flaw" value="" /></td>
+  </tr>
+</table>
+
+<br />
+<h2 style="text-align: left">Governing Abilites</h2>
+<table style="width:100%">
+  <tr>
+    <th>Strength</th>
+    <th>Intelligence</th>
+    <th>Wisdom</th>
+    <th>Dexterity</th>
+    <th>Consititution</th>
+    <th>Charisma</th>
+  </tr>
+  <tr>
+    <td><input style="width:89%" type="number" name="attr_Strength" value="" /><input type="number" name="attr_StrMod" value="(floor((@{Strength}-10)/3))" disabled="true" /></td>
+    <td><input style="width:89%" type="number" name="attr_Intelligence" value="" /><input type="number" name="attr_IntMod" value="(@{Intelligence}-10)/3" disabled="true" /></td>
+    <td><input style="width:89%" type="number" name="attr_Wisdom" value="" /><input type="number" name="attr_WisMod" value="(@{Wisdom}-10)/3" disabled="true" /></td>
+    <td><input style="width:89%" type="number" name="attr_Dexterity" value="" /><input type="number" name="attr_DexMod" value="(@{Dexterity}-10)/3" disabled="true" /></td>
+    <td><input style="width:89%" type="number" name="attr_Consititution" value="" /><input type="number" name="attr_ConMod" value="(@{Consititution}-10)/3" disabled="true" /></td>
+    <td><input style="width:89%" type="number" name="attr_Charisma" value="" /><input type="number" name="attr_ChaMod" value="(@{Charisma}-10)/3" disabled="true" /></td>
+</table>
+
+<br />
+<h2 style="text-align: center">-</h2>
+<table style="width:100%">
+  <tr>
+    <td>
+      <h3 style="text-align: center">Lifepaths</h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Level</th>
+          <th>Name</th>
+          <th>Level</th>
+        </tr>
+        <tr>
+          <td><input style="width:89%" type="text" name="attr_name_1" value="" /></td>
+          <td><input style="width:89%" type="number" name="attr_level_1" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_name_2" value="" /></td>
+          <td><input style="width:89%" type="number" name="attr_level_2" value="" /></td>
+        </tr>
+        <tr>
+          <td><input style="width:89%" type="text" name="attr_name_3" value="" /></td>
+          <td><input style="width:89%" type="number" name="attr_level_3" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_name_4" value="" /></td>
+          <td><input style="width:89%" type="number" name="attr_level_4" value="" /></td>
+        </tr>
+        <tr>
+          <td><input style="width:89%" type="text" name="attr_name_5" value="" /></td>
+          <td><input style="width:89%" type="number" name="attr_level_5" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_name_6" value="" /></td>
+          <td><input style="width:89%" type="number" name="attr_level_6" value="" /></td>
+        </tr>
+      </table>
+
+      <h3 style="text-align: center">Mentalities</h3>
+      <table>
+        <tr>
+          <td>Nationality</td>
+          <td><input style="width:89%" type="text" name="attr_nationality" value="French" /></td>
+          <td><input style="width:89%" type="text" name="attr_nationality_dice" value="" /></td>
+        </tr>
+        <tr>
+          <td>Religion</td>
+          <td><input style="width:89%" type="text" name="attr_religion" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_religion_dice" value="" /></td>
+        </tr>
+        <tr>
+          <td>Politics</td>
+          <td><input style="width:89%" type="text" name="attr_politics" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_politics_dice" value="" /></td>
+        </tr>
+      </table>
+
+      <h3 style="text-align: center">Clothing & Appearance</h3>
+      <textarea
+        style="text-align: left"
+        rows="2"
+        cols="40"
+        name="attr_clothing_and_appearance"
+      >
+       
+     </textarea>
+
+      <h3 style="text-align: center">Equipment & Inventory</h3>
+      <textarea
+        style="text-align: left"
+        rows="2"
+        cols="40"
+        name="attr_equiptment_and_inventory"
+      >
+     
+   </textarea
+      >
+      <h3 style="text-align: center">Other Lifepath Skills</h3>
+      <table>
+        <tr>
+          <td>Nationality</td>
+          <td><input style="width:89%" type="text" name="attr_other1" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_other1_dice" value="" /></td>
+        </tr>
+        <tr>
+          <td>Religion</td>
+          <td><input style="width:89%" type="text" name="attr_other2" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_other2_dice" value="" /></td>
+        </tr>
+        <tr>
+          <td>Politics</td>
+          <td><input style="width:89%" type="text" name="attr_other3" value="" /></td>
+          <td><input style="width:89%" type="text" name="attr_other3_dice" value="" /></td>
+        </tr>
+      </table>
+
+      <h3 style="text-align: center">History</h3>
+      <textarea
+        style="text-align: left"
+        rows="2"
+        cols="40"
+        name="attr_history"
+      >
+     
+   </textarea
+      >
+    </td>
+    <td>
+      <h3 style="text-align: center">Measures</h3>
+      <table>
+        <tr>
+          <th>Age</th>
+          <th>Exertion</th>
+        </tr>
+        <tr>
+          <td>
+            <input style="width:89%" type="number" name="attr_age" value="" />
+          </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_exertion" value="" />
+          </td>
+        </tr>
+      </table>
+
+      <h4 style="text-align: center">Saves</h4>
+      <table>
+        <tr>
+          <th>P&P</th>
+          <th>Terror</th>
+          <th>Chance</th>
+          <th>Artillery</th>
+        </tr>
+        <tr>
+          <td>
+            <input style="width:89%" type="number" name="attr_PnP" value="16" />
+          </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_terror" value="16" />
+          </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_chance" value="16" />
+          </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_artillery" value="16" />
+          </td>
+        </tr>
+      </table>
+
+      <h4 style="text-align: center">Hit Points</h4>
+      <table>
+        <tr>
+          <th>Total</th>
+          <th>Current</th>
+        </tr>
+        <tr>
+          <td>
+            <input style="width:89%" type="text" name="attr_hp_total" value="" />
+          </td>
+          <td>
+            <input style="width:89%" type="text" name="attr_hp_current" value="" />
+          </td>
+        </tr>
+      </table>
+
+      <h4 style="text-align: center">Will</h4>
+      <table>
+        <tr>
+          <th>Total</th>
+          <th>Current</th>
+        </tr>
+        <tr>
+          <td>
+            <input style="width:89%" type="number" name="attr_will_total" value="" />
+          </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_will_current" value="" />
+          </td>
+        </tr>
+      </table>
+      <h4 style="text-align: center">Reputation</h4>
+      <table>
+        <tr>
+            <th>Damage</th>
+          <th>Total</th>
+          <th>Current</th>
+        </tr>
+        <tr>
+            <td>
+                <input style="width:89%" type="text" name="attr_rep_damage" value="" />
+              </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_rep_total" value="" />
+          </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_rep_current" value="" />
+          </td>
+        </tr>
+      </table>
+      <h4 style="text-align: center">Morale</h4>
+      <table>
+        <tr>
+          <th>Total</th>
+          <th>Current</th>
+        </tr>
+        <tr>
+          <td>
+            <input style="width:89%" type="number" name="attr_morale_total" value="" />
+          </td>
+          <td>
+            <input style="width:89%" type="number" name="attr_morale_current" value="" />
+          </td>
+        </tr>
+      </table>
+
+      <h4 style="text-align: center">Duel of Wits</h4>
+      <table>
+        <tr>
+          <td>Voice</td>
+        
+          <td>To Hit</td>
+          <td><input style="width:89%" type="text" name="attr_voice_to_hit" value="" /></td>
+          <td>Damage</td>
+          <td><input style="width:89%" type="text" name="attr_voice_damage_dice" value="" /></td>
+        </tr>
+        <tr>
+          <td>Press</td>
+        
+          <td>To Hit</td>
+          <td><input style="width:89%" type="text" name="attr_press_to_hit" value="" /></td>
+          <td>Damage</td>
+          <td><input style="width:89%" type="text" name="attr_press_damage_dice" value="" /></td>
+        </tr>
+      </table>
+      <table>
+        <tr><td>Reputation Armor</td><td><input style="width:89%" type="text" name="attr_rep_armour2" value="" /></td></tr>
+      </table>
+      <table>
+          <tr><td>Special Skills</td><td><input style="width:89%" type="text" name="attr_special_skills2" value="" /></td></tr>
+      </table>  
+
+      <h4 style="text-align: center">Combat</h4>
+      <table>
+          <tr>
+            <td>Defense (Str/Dex)</td>
+            <td>Attack</td>
+            <td><input style="width:89%" type="number" name="attr_attack" value="" /></td>
+            <td>Defend</td>
+            <td><input style="width:89%" type="number" name="attr_defend" value="" /></td>
+          </tr>
+          <tr>
+            <td>Melee (Str)</td>
+            <td>To Hit</td>
+            <td><input style="width:89%" type="text" name="name" value="" /></td>
+            <td>Damage</td>
+            <td><input style="width:89%" type="text" name="name" value="" /></td>
+          </tr>
+        </table>
+        <table>
+            <tr><td>Musketry(Dex)</td><td>To Hit</td><td><input style="width:89%" type="text" name="name" value="" /></td></tr>
+        </table>
+        <table>
+          <tr><td>Armor</td><td><input style="width:89%" type="text" name="attr_armor_die" value="" /></td><td><input style="width:89%" type="text" name="attr_armor_points" value="" /></td></tr>
+        </table>
+        <table>
+            <tr><td>Special Skills</td><td><input style="width:89%" type="text" name="attr_combat_special_skills" value="" /></td></tr>
+        </table> 
+      <h4 style="text-align: center">Arms</h4>
+      <table>
+        <tr>
+          <td><input style="width:89%" type="text" name="attr_arms_1" value="" /></td><td>Damage</td><td><input style="width:89%" type="text" name="attr_arms_damage_1" value="" /></td><td>Initiative</td><td><input style="width:89%" type="text" name="attr_arms_init_1" value="" /></td>
+         <tr>
+          <td><input style="width:89%" type="text" name="attr_arms_2" value="" /></td><td>Damage</td><td><input style="width:89%" type="text" name="attr_arms_damage_2" value="" /></td><td>Initiative</td><td><input style="width:89%" type="text" name="attr_arms_init_2" value="" /></td>
+        </tr>
+          <td><input style="width:89%" type="text" name="attr_arms_3" value="" /></td><td>Damage</td><td><input style="width:89%" type="text" name="attr_arms_damage_3" value="" /></td><td>Initiative</td><td><input style="width:89%" type="text" name="attr_arms_init_3" value="" /></td>
+         <tr>
+          <td><input style="width:89%" type="text" name="attr_arms_4" value="" /></td><td>Damage</td><td><input style="width:89%" type="text" name="attr_arms_damage_4" value="" /></td><td>Initiative</td><td><input style="width:89%" type="text" name="attr_arms_init_4" value="" /></td>
+        </tr>
+      </table>
+    </td>
+
+    <td>
+      <h3 style="text-align: center">Wealth</h3>
+      <table>
+        <tr>
+          <td>Wealth Rating</td>
+          <td><input style="width:89%" type="number" name="attr_wealth_rating" value="" /></td>
+          <td>Class</td>
+          <td><input style="width:89%" type="text" name="atter_class" value="" /></td>
+        </tr>
+        <tr>
+          <td>Obligations</td>
+          <td><input style="width:89%" type="number" name="attr_obligations_count" value="" /></td>
+          <td>Property</td>
+          <td><input style="width:89%" type="text" name="attr_property" value="" /></td>
+        </tr>
+        <tr>
+          <td>Debts</td>
+          <td><input style="width:89%" type="text" name="attr_debts" value="" /></td>
+          <td>Income</td>
+          <td><input style="width:89%" type="text" name="attr_income" value="" /></td>
+        </tr>
+        <tr>
+          <td>Dependents</td>
+          <td><input style="width:89%" type="number" name="attr_dependants_count" value="" /></td>
+          <td>Relation</td>
+          <td><input style="width:89%" type="text" name="attr_relations" value="" /></td>
+        </tr>
+      </table>
+
+      <textarea
+        style="text-align: left"
+        rows="2"
+        cols="40"
+        name="attr_obligations_notes"
+      >
+     
+    </textarea
+      >
+      <h3 style="text-align: center">General Skills</h3>
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>Break</td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_break" value="" />
+                </td>
+                <td>Str</td>
+                <td>Sang-Froid</td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_sang_froid" value="" />
+                </td>
+                <td>Con</td>
+              </tr>
+              <tr>
+                <td>
+                  Improvise
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_improvise" value="" />
+                </td>
+                <td>Wis</td>
+                <td>
+                  Search
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_search" value="" /> 
+                </td>
+                <td>Int</td>   
+              </tr>
+              <tr>
+                <td>
+                  Listen
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="name" value="" />
+                </td>
+                <td>Wis</td>
+                <td>
+                  Sneak
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="name" value="" />
+                </td>
+                <td>Dex</td>
+              </tr>
+              <tr>
+                <td>
+                  Parley
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="name" value="" />
+                </td>
+                <td>Cha</td>
+                <td>
+                  Taverse
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="name" value="" />
+                </td>
+                <td>Dex</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr></tr>
+      </table>
+
+      <h3 style="text-align: center">Lifepath Skills</h3>
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_1" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_1" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_2" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_2" value="" />
+                </td>
+               
+              </tr>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_3" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_3" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_4" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_4" value="" />
+                </td>
+               
+              </tr>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_5" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_5" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_6" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_6" value="" />
+                </td>
+               
+              </tr>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_7" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_7" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skillname_8" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lp_skilldice_8" value="" />
+                </td>
+               
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr></tr>
+      </table>
+
+      <h3 style="text-align: center">Language Skills</h3>
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_1" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_1" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_2" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_2" value="" />
+                </td>
+               
+              </tr>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_3" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_3" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_4" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_4" value="" />
+                </td>
+               
+              </tr>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_5" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_5" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_6" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_6" value="" />
+                </td>
+               
+              </tr>
+              <tr>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_7" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_7" value="" />
+                </td>
+               
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_name_8" value="" />
+                </td>
+                <td>
+                  <input style="width:89%" type="text" name="attr_lang_die_8" value="" />
+                </td>
+               
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr></tr>
+      </table>
+      <h3 style="text-align: center">Special Martial Skills</h3>
+      <textarea
+        style="text-align: left"
+        rows="2"
+        cols="40"
+        name="attr_martial"
+      ></textarea>
+    </td>
+  </tr>
+</table>
